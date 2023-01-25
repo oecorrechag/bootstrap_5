@@ -26,7 +26,7 @@ app.layout = dbc.Container([
                             align="center",
                             className="g-0",
                         ),
-                        href="https://google.com",
+                        href="#",
                         style={"textDecoration": "none"},
                     ),
                     dbc.NavbarToggler(id="navbar-toggler", n_clicks=0),
