@@ -89,7 +89,7 @@ app.layout = dbc.Container([
                             architecto velit vel aperiam nesciunt ut asperiores commodi dignissimos delectus \
                             mollitia adipisci est reprehenderit a, autem placeat qui. Fugit?"),
                     dbc.Button("Quiero ser orador", outline=True, color="dark", className="me-1"),
-                    dbc.Button("Comprar tickets", className="btn-platzi"),  #color="dark", 
+                    dbc.Button("Comprar tickets", className="btn-platzi"), 
 
                     ],width={"size": 6, "offset": 6}),
 
@@ -101,6 +101,156 @@ app.layout = dbc.Container([
     ], fluid=True, id="main", className='main'),
 
 
+
+    ############################################## Speakers ##############################################
+
+    html.Div(id='speakers', className="mt-4", children=[
+        dbc.Container([
+
+            dbc.Row(className="col text-center", children=[
+                dbc.Col([
+                    html.Small("Conoce a los"),
+                    html.H2("Oradores"),
+                ]),
+            ]),
+
+            dbc.Row(children=[
+
+                dbc.Col(className="col-12 col-md-6 col-lg-4 mb-4", children=[
+
+                    dbc.Card([
+                            dbc.CardImg(src="assets/speakers/buoh.jpg", top=True),
+                            dbc.CardBody([
+                                html.Div(className="badges", children=[
+                                    html.Span([
+                                        dbc.Badge("JavaScript", color="warning", className="me-1"),
+                                        dbc.Badge("Spark", color="success", className="me-1"),
+                                    ]),
+                                ]),
+                                html.H5("Orador 1"),
+                                html.P("Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora \
+                                        voluptatem quasi doloremque rerum, nulla voluptate. Accusamus, tempora. \
+                                        Consectetur tempora fuga quasi, cumque atque obcaecati quisquam dolorem \
+                                        iste voluptatum dolorum nostrum.", className="card-text"),
+                            ]),
+                        ],
+                    )
+                ]),
+
+
+                dbc.Col(className="col-12 col-md-6 col-lg-4 mb-4", children=[
+
+                    dbc.Card([
+                            dbc.CardImg(src="assets/speakers/leon.jpg", top=True),
+                            dbc.CardBody([
+                                html.Div(className="badges", children=[
+                                    html.Span([
+                                        dbc.Badge("JavaScript", color="warning", className="me-1"),
+                                        dbc.Badge("Spark", color="success", className="me-1"),
+                                    ]),
+                                ]),
+                                html.H5("Orador 2"),
+                                html.P("Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora \
+                                        voluptatem quasi doloremque rerum, nulla voluptate. Accusamus, tempora. \
+                                        Consectetur tempora fuga quasi, cumque atque obcaecati quisquam dolorem \
+                                        iste voluptatum dolorum nostrum.", className="card-text"),
+                            ]),
+                        ],
+                    )
+                ]),
+
+
+                dbc.Col(className="col-12 col-md-6 col-lg-4 mb-4", children=[
+
+                    dbc.Card([
+                            dbc.CardImg(src="assets/speakers/elefante.jpg", top=True),
+                            dbc.CardBody([
+                                html.Div(className="badges", children=[
+                                    html.Span([
+                                        dbc.Badge("JavaScript", color="warning", className="me-1"),
+                                        dbc.Badge("Spark", color="success", className="me-1"),
+                                    ]),
+                                ]),
+                                html.H5("Orador 3"),
+                                html.P("Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora \
+                                        voluptatem quasi doloremque rerum, nulla voluptate. Accusamus, tempora. \
+                                        Consectetur tempora fuga quasi, cumque atque obcaecati quisquam dolorem \
+                                        iste voluptatum dolorum nostrum.", className="card-text"),
+                            ]),
+                        ],
+                    )
+                ]),
+
+
+                dbc.Col(className="col-12 col-md-6 col-lg-4 mb-4", children=[
+
+                    dbc.Card([
+                            dbc.CardImg(src="assets/speakers/zebra.jpg", top=True),
+                            dbc.CardBody([
+                                html.Div(className="badges", children=[
+                                    html.Span([
+                                        dbc.Badge("JavaScript", color="warning", className="me-1"),
+                                        dbc.Badge("Spark", color="success", className="me-1"),
+                                    ]),
+                                ]),
+                                html.H5("Orador 4"),
+                                html.P("Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora \
+                                        voluptatem quasi doloremque rerum, nulla voluptate. Accusamus, tempora. \
+                                        Consectetur tempora fuga quasi, cumque atque obcaecati quisquam dolorem \
+                                        iste voluptatum dolorum nostrum.", className="card-text"),
+                            ]),
+                        ],
+                    )
+                ]),
+
+
+                dbc.Col(className="col-12 col-md-6 col-lg-4 mb-4", children=[
+
+                    dbc.Card([
+                            dbc.CardImg(src="assets/speakers/snake.jpg", top=True),
+                            dbc.CardBody([
+                                html.Div(className="badges", children=[
+                                    html.Span([
+                                        dbc.Badge("JavaScript", color="warning", className="me-1"),
+                                        dbc.Badge("Spark", color="success", className="me-1"),
+                                    ]),
+                                ]),
+                                html.H5("Orador 5"),
+                                html.P("Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora \
+                                        voluptatem quasi doloremque rerum, nulla voluptate. Accusamus, tempora. \
+                                        Consectetur tempora fuga quasi, cumque atque obcaecati quisquam dolorem \
+                                        iste voluptatum dolorum nostrum.", className="card-text"),
+                            ]),
+                        ],
+                    )
+                ]),
+
+
+                dbc.Col(className="col-12 col-md-6 col-lg-4 mb-4", children=[
+
+                    dbc.Card([
+                            dbc.CardImg(src="assets/speakers/paloma.jpg", top=True),
+                            dbc.CardBody([
+                                html.Div(className="badges", children=[
+                                    html.Span([
+                                        dbc.Badge("JavaScript", color="warning", className="me-1"),
+                                        dbc.Badge("Spark", color="success", className="me-1"),
+                                    ]),
+                                ]),
+                                html.H5("Orador 6"),
+                                html.P("Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora \
+                                        voluptatem quasi doloremque rerum, nulla voluptate. Accusamus, tempora. \
+                                        Consectetur tempora fuga quasi, cumque atque obcaecati quisquam dolorem \
+                                        iste voluptatum dolorum nostrum.", className="card-text"),
+                            ]),
+                        ],
+                    )
+                ]),
+
+
+            ]),
+        ])
+    ]),
 
 
 
