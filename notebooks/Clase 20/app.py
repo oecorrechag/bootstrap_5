@@ -75,13 +75,27 @@ app.layout = dbc.Container([
             ride="carousel",      
         ),
 
-        # dbc.Container([
-        #     dbc.Container([
-        #         dbc.Row(children=[
-        #             html.P("Main Menu"),
-        #         ], className="row text-center"), 
-        #     ]),
-        # ], id="overlay"),
+        dbc.Container([
+            dbc.Container([
+                dbc.Row(children=[
+
+                    dbc.Col([
+
+                    html.H1("Platzi conf Hawaii", className="sub_title"),
+                    html.P("Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, illo eos ad \
+                            inventore reiciendis alias impedit repellendus dolorum. Itaque cum perspiciatis nihil \
+                            magni, voluptatem quibusdam asperiores aperiam animi ipsa iure! Tenetur eligendi \
+                            blanditiis soluta necessitatibus consectetur sit laudantium ipsum iste explicabo \
+                            architecto velit vel aperiam nesciunt ut asperiores commodi dignissimos delectus \
+                            mollitia adipisci est reprehenderit a, autem placeat qui. Fugit?"),
+                    dbc.Button("Quiero ser orador", outline=True, color="dark", className="me-1"),
+                    dbc.Button("Comprar tickets", className="btn-platzi"),  #color="dark", 
+
+                    ],width={"size": 6, "offset": 6}),
+
+                ], className="row text-center"), 
+            ]),
+        ], id="overlay"),
 
 
     ], fluid=True, id="main", className='main'),
