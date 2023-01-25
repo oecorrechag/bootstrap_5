@@ -62,6 +62,7 @@ app.layout = dbc.Container([
     
     
     dbc.Container([
+
         dbc.Carousel(
             items=[
                 {"key": "1", "src": "/assets/images/hawaii.jpg"},
@@ -71,8 +72,18 @@ app.layout = dbc.Container([
             controls=False,
             indicators=False,
             interval=2000,
-            ride="carousel",
+            ride="carousel",      
         ),
+
+        # dbc.Container([
+        #     dbc.Container([
+        #         dbc.Row(children=[
+        #             html.P("Main Menu"),
+        #         ], className="row text-center"), 
+        #     ]),
+        # ], id="overlay"),
+
+
     ], fluid=True, id="main", className='main'),
 
 
