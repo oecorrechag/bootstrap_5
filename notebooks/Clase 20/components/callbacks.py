@@ -34,7 +34,9 @@ modals = html.Div(
 
 @callback(
     Output("modal-centered", "is_open"),
-    [Input("modalCompra", "n_clicks"), Input("close-centered", "n_clicks")],
+    [Input("modalCompra", "n_clicks"), 
+     Input("close-centered", "n_clicks")],
+     # Input("close-centered", "n_clicks")],
     [State("modal-centered", "is_open")],
 )
 def toggle_modal(n1, n2, is_open):

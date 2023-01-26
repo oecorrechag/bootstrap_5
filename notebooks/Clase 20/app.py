@@ -44,7 +44,7 @@ app.layout = dbc.Container([
                         dbc.Row([dbc.Col(children=[dbc.NavItem(dbc.NavLink("Conviertete en orador", href="conviertete-en-orador"))])],
                                     className="g-0 ms-auto flex-nowrap mt-3 mt-md-0", align="center"),
 
-                        dbc.Row([dbc.Col(children=[dbc.NavItem(dbc.NavLink("Tickets", href="#"))])],
+                        dbc.Row([dbc.Col(children=[dbc.NavItem(dbc.NavLink("Tickets", href="#", className="text-platzi"))])],
                                     className="g-0 ms-auto flex-nowrap mt-3 mt-md-0", align="center"),
 
                     ], id="navbar-collapse", is_open=False, navbar=True,
