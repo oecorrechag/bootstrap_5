@@ -296,9 +296,9 @@ app.layout = dbc.Container([
             dbc.Row(children=[
 
                 dbc.Col(className="col text-center", children=[
-                    html.P(["Anotate como orador ", 
-                    html.Span("ignite", id="tooltip",style={"cursor": "pointer"},), 
-                    " Quienes hablar de?"]),
+                    html.P(["Anotate como orador para dar una ", 
+                    html.Span("charla ignite", id="tooltip",style={"cursor": "pointer"},), 
+                    " Cuentanos de que quienes hablar?"]),
                     dbc.Tooltip("talks of mins", target="tooltip"),
                 ]),
 
@@ -346,7 +346,7 @@ app.layout = dbc.Container([
                             dbc.Button("Enviar", className="btn btn-platzi w-100"), 
                         ]),
                     ]),
-                    
+
                 ]),
             ]),
         ]),
