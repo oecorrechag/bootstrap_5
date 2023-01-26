@@ -253,6 +253,32 @@ app.layout = dbc.Container([
     ]),
 
 
+    ########################################### place and date ###########################################
+
+    html.Div(id='place-time', children=[
+        dbc.Container([
+            dbc.Row(children=[
+
+                dbc.Col(className="col-12 col-lg-6 pl-0 pr-0", children=[
+                    html.Img(src="assets/images/honolulu.jpeg")
+                ]),
+
+
+                dbc.Col(className="col-12 col-lg-6 pt-4 pb-4", children=[
+                    html.H2("Conferencias 2030"),
+                    html.P("Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora \
+                            voluptatem quasi doloremque rerum, nulla voluptate. Accusamus, tempora. \
+                            Consectetur tempora fuga quasi, cumque atque obcaecati quisquam dolorem \
+                            iste voluptatum dolorum nostrum.", className="card-text"),
+                    dbc.Button("Conoce más", href="https://es.wikipedia.org/wiki/Honolulu", outline=True, color="light", className="me-1"),
+                ]),
+            ]),
+        ], fluid=True) 
+    ]),
+
+
+
+    ############################################ be a speaker ############################################
 
 
 
@@ -260,16 +286,6 @@ app.layout = dbc.Container([
 
 
 
-
-
-
-    ############################################## interior ##############################################
-
-
-
-    html.Br(),
-    html.H4("Main", className="sub_title"),
-    html.Br(),
 
 
 
