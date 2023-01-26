@@ -305,17 +305,50 @@ app.layout = dbc.Container([
             ]),
 
             dbc.Row(children=[
-                
+
+                dbc.Col(className="col col-md-10 offset-md-1 col-lg-8 offset-lg-2 pt-2", children=[
+
+                    dbc.Row(children=[
+
+                        dbc.Col(className="form-label col-12 col-md-6", children=[
+
+                            dbc.Input(type="text", id="first_name", className="form-control", placeholder="First name",),
+
+                        ]),
+
+                        dbc.Col(className="form-label col-12 col-md-6", children=[
+
+                            dbc.Input(type="text", id="last_name", className="form-control", placeholder="Last name",),
+
+                        ]),
+
+                    ]),
+
+                    dbc.Row(children=[
+                        dbc.Col([
+
+                            html.Div(
+                                [
+                                    dbc.Textarea(className="mb-3", placeholder="Sobre tu charla"),
+                                    html.Small(["Recuerde poner ",
+                                    html.Span("titulo", id="tooltip2",style={"cursor": "pointer"},), 
+                                    '.']),
+                                    dbc.Tooltip("talk name", target="tooltip2"),
+                                ]
+                            ),
+
+                        ]),
+                    ]),
+
+
+                    dbc.Row(children=[
+                        dbc.Col([
+                            dbc.Button("Enviar", className="btn btn-platzi w-100"), 
+                        ]),
+                    ]),
+                    
+                ]),
             ]),
-
-
-
-
-
-
-
-
-
         ]),
     ]),
 
