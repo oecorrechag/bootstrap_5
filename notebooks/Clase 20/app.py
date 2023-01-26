@@ -280,7 +280,44 @@ app.layout = dbc.Container([
 
     ############################################ be a speaker ############################################
 
+    html.Div(id='conviertete-en-orador', className="pt-3 pb-3", children=[
+        dbc.Container([
 
+            dbc.Row(children=[
+
+                dbc.Col(className="col text-uppercase text-center", children=[
+                    html.Small("Conviertete en un"),
+                    html.H2("Orador"),
+                ]),
+
+            ]),
+
+
+            dbc.Row(children=[
+
+                dbc.Col(className="col text-center", children=[
+                    html.P(["Anotate como orador ", 
+                    html.Span("ignite", id="tooltip",style={"cursor": "pointer"},), 
+                    " Quienes hablar de?"]),
+                    dbc.Tooltip("talks of mins", target="tooltip"),
+                ]),
+
+            ]),
+
+            dbc.Row(children=[
+                
+            ]),
+
+
+
+
+
+
+
+
+
+        ]),
+    ]),
 
 
 
