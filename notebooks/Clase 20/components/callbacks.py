@@ -10,9 +10,11 @@ modals = html.Div(
             [
                 dbc.ModalHeader(dbc.ModalTitle("Comprar tickets"), close_button=True),
                 dbc.ModalBody("This modal is vertically centered"),
-                dbc.ModalFooter(
+                dbc.ModalFooter([
                     dbc.Button("Cancel", id="close-centered", className="ms-auto",n_clicks=0,),
-                    #dbc.Button("Comprar", id='modalCompra', className="btn-platzi"), 
+                    dbc.Button("Comprar", className="btn-platzi"),
+                ]
+ 
                 ),
             ],
             id="modal-centered",
