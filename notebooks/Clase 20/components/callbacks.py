@@ -9,13 +9,22 @@ modals = html.Div(
         dbc.Modal(
             [
                 dbc.ModalHeader(dbc.ModalTitle("Comprar tickets"), close_button=True),
-                dbc.ModalBody("This modal is vertically centered"),
+                dbc.Row(className="m-3", children=[
+                        dbc.Label("Email: ", html_for="example-email-row", width=2),
+                        dbc.Col(width=10, children=[
+                            dbc.Input(
+                                type="email", id="example-email-row", placeholder="Enter email"
+                            ),
+                            dbc.Alert("You have a mail", color="warning"),  
+                        ],
+                        ),
+                    ],
+                ),
+
                 dbc.ModalFooter([
                     dbc.Button("Cancel", id="close-centered", className="ms-auto",n_clicks=0,),
                     dbc.Button("Comprar", className="btn-platzi"),
-                ]
- 
-                ),
+                ]),
             ],
             id="modal-centered",
             centered=True,
