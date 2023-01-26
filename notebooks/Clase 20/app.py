@@ -1,7 +1,7 @@
 from dash import Dash, html, Input, Output, State, html
 import dash_bootstrap_components as dbc
-import plotly.express as px
-import pandas as pd
+
+from components.callbacks import modals
 
 app = Dash(__name__, title = 'PlatziConf Hawaii',
     external_stylesheets=[dbc.themes.BOOTSTRAP]
@@ -88,8 +88,8 @@ app.layout = dbc.Container([
                             blanditiis soluta necessitatibus consectetur sit laudantium ipsum iste explicabo \
                             architecto velit vel aperiam nesciunt ut asperiores commodi dignissimos delectus \
                             mollitia adipisci est reprehenderit a, autem placeat qui. Fugit?"),
-                    dbc.Button("Quiero ser orador", outline=True, color="dark", className="me-1"),
-                    dbc.Button("Comprar tickets", className="btn-platzi"), 
+                    # dbc.Button("Quiero ser orador", outline=True, color="dark", className="me-1"),
+                    modals,
 
                     ],width={"size": 6, "offset": 6}),
 
@@ -378,10 +378,15 @@ app.layout = dbc.Container([
 
         ], className="row text-center"), 
         
-    ], fluid=True, id="footer", className="pb-4 pt-4")
+    ], fluid=True, id="footer", className="pb-4 pt-4"),
+
 
 
 ], fluid=True) 
+
+
+
+
 
 
 
