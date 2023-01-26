@@ -26,22 +26,22 @@ app.layout = dbc.Container([
                             align="center",
                             className="g-0",
                         ),
-                        href="#",
+                        href="/",
                         style={"textDecoration": "none"},
                     ),
                     dbc.NavbarToggler(id="navbar-toggler", n_clicks=0),
-                    dbc.Collapse([
+                    dbc.Collapse(className="navbar", children=[
 
-                        dbc.Row([dbc.Col(children=[dbc.NavItem(dbc.NavLink("Conferencia", href="#"))])],
+                        dbc.Row([dbc.Col(children=[dbc.NavItem(dbc.NavLink("Conferencia", href="#main"))])],
                                     className="g-0 ms-auto flex-nowrap mt-3 mt-md-0", align="center"),
 
-                        dbc.Row([dbc.Col(children=[dbc.NavItem(dbc.NavLink("Oradores", href="#"))])],
+                        dbc.Row([dbc.Col(children=[dbc.NavItem(dbc.NavLink("Oradores", href="#speakers"))])],
                                     className="g-0 ms-auto flex-nowrap mt-3 mt-md-0", align="center"),
 
-                        dbc.Row([dbc.Col(children=[dbc.NavItem(dbc.NavLink("Lugar y fecha", href="#"))])],
+                        dbc.Row([dbc.Col(children=[dbc.NavItem(dbc.NavLink("Lugar y fecha", href="#place-time"))])],
                                     className="g-0 ms-auto flex-nowrap mt-3 mt-md-0", align="center"),
 
-                        dbc.Row([dbc.Col(children=[dbc.NavItem(dbc.NavLink("Conviertete en orador", href="#"))])],
+                        dbc.Row([dbc.Col(children=[dbc.NavItem(dbc.NavLink("Conviertete en orador", href="conviertete-en-orador"))])],
                                     className="g-0 ms-auto flex-nowrap mt-3 mt-md-0", align="center"),
 
                         dbc.Row([dbc.Col(children=[dbc.NavItem(dbc.NavLink("Tickets", href="#"))])],
