@@ -32,21 +32,6 @@ app.layout = dbc.Container([
                     dbc.NavbarToggler(id="navbar-toggler", n_clicks=0),
                     dbc.Collapse(className="navbar", children=[
 
-                        # dbc.Row([dbc.Col(children=[dbc.NavItem(dbc.NavLink("Conferencia", href="#main"))])],
-                        #             className="g-0 ms-auto flex-nowrap mt-3 mt-md-0", align="center"),
-
-                        # dbc.Row([dbc.Col(children=[dbc.NavItem(dbc.NavLink("Oradores", href="#speakers"))])],
-                        #             className="g-0 ms-auto flex-nowrap mt-3 mt-md-0", align="center"),
-
-                        # dbc.Row([dbc.Col(children=[dbc.NavItem(dbc.NavLink("Lugar y fecha", href="#place-time"))])],
-                        #             className="g-0 ms-auto flex-nowrap mt-3 mt-md-0", align="center"),
-
-                        # dbc.Row([dbc.Col(children=[dbc.NavItem(dbc.NavLink("Conviertete en orador", href="conviertete-en-orador"))])],
-                        #             className="g-0 ms-auto flex-nowrap mt-3 mt-md-0", align="center"),
-
-                        # dbc.Row([dbc.Col(children=[dbc.NavItem(dbc.NavLink("Tickets", id='modal_comprar', href="#", className="text-platzi"))])],
-                        #             className="g-0 ms-auto flex-nowrap mt-3 mt-md-0", align="center"),
-
                         dbc.NavItem(dbc.NavLink(html.A("Conferencia", href="#main",
                                         className='text-light font-weight-bold'))),
 
@@ -125,10 +110,10 @@ app.layout = dbc.Container([
 
     ############################################## Speakers ##############################################
 
-    html.Div(id='speakers', className="mt-4", children=[
+    html.Div(id='speakers', className="mt-4 pt-3 pb-3", children=[
         dbc.Container([
 
-            dbc.Row(className="col text-center", children=[
+            dbc.Row(className="col text-center  pt-3 pb-3", children=[
                 dbc.Col([
                     html.Small("Conoce a los"),
                     html.H2("Oradores"),
