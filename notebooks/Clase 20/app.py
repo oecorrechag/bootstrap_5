@@ -111,55 +111,53 @@ app.layout = dbc.Container([
 
 
 
+# el siguiente es el que mejor funciona
 
 
-    dbc.Container([
+    dbc.Container(id='main', className='main', children=[  #fluid=True, 
 
-        # faltatira el html div
+        # sin html div
 
-        dbc.Container(className='carousel-inner', children=[
+            dbc.Container(className='carousel-inner', fluid=True, children=[
 
-            dbc.Carousel(
-                items=[
-                    {"key": "1", "src": "/assets/images/hawaii.jpg"},
-                    {"key": "2", "src": "/assets/images/hawaii2.jpg"},
-                    {"key": "3", "src": "assets/images/hawaii3.jpeg"},
-                ],
-                controls=False,
-                indicators=False,
-                interval=2000,
-                ride="carousel",      
-            ),
+                dbc.Carousel(
+                    items=[
+                        {"key": "1", "src": "/assets/images/hawaii.jpg"},
+                        {"key": "2", "src": "/assets/images/hawaii2.jpg"},
+                        {"key": "3", "src": "assets/images/hawaii3.jpeg"},
+                    ],
+                    controls=False,
+                    indicators=False,
+                    interval=2000,
+                    ride="carousel",      
+                ),
 
-            html.Div(className='overlay carousel-caption', children=[
+                html.Div(className='overlay carousel-caption', children=[
 
-                dbc.Container([
-                    dbc.Row(children=[
+                    dbc.Container([
+                        dbc.Row(children=[
 
-                        dbc.Col([
+                            dbc.Col([
 
-                        html.H1("Title", className="sub_title"),
-                        html.P("Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, illo eos ad \
-                                inventore reiciendis alias impedit repellendus dolorum. Itaque cum perspiciatis nihil \
-                                magni, voluptatem quibusdam asperiores aperiam animi ipsa iure! Tenetur eligendi \
-                                blanditiis soluta necessitatibus consectetur sit laudantium ipsum iste explicabo \
-                                architecto velit vel aperiam nesciunt ut asperiores commodi dignissimos delectus \
-                                mollitia adipisci est reprehenderit a, autem placeat qui. Fugit?"),
-                        modals,
+                            html.H1("Platzi conf Hawaii", className="sub_title"),
+                            html.P("Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, illo eos ad \
+                                    inventore reiciendis alias impedit repellendus dolorum. Itaque cum perspiciatis nihil \
+                                    magni, voluptatem quibusdam asperiores aperiam animi ipsa iure! Tenetur eligendi \
+                                    blanditiis soluta necessitatibus consectetur sit laudantium ipsum iste explicabo \
+                                    architecto velit vel aperiam nesciunt ut asperiores commodi dignissimos delectus \
+                                    mollitia adipisci est reprehenderit a, autem placeat qui. Fugit?"),
+                            modals,
 
-                        ],width={"size": 6, "offset": 6}),
+                            ], width={"size": 6, "offset": 6}),
 
-                    ], className="row text-center"), 
+                        ], className="row text-center"), 
+                    ]),
+                    
                 ]),
-                
+
             ]),
 
-
-
-        ]),
-
-
-    ], fluid=True, id="main", className='main'),
+    ], fluid=True),
 
 
 
