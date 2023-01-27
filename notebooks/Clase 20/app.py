@@ -44,6 +44,9 @@ app.layout = dbc.Container([
                         # dbc.Row([dbc.Col(children=[dbc.NavItem(dbc.NavLink("Conviertete en orador", href="conviertete-en-orador"))])],
                         #             className="g-0 ms-auto flex-nowrap mt-3 mt-md-0", align="center"),
 
+                        # dbc.Row([dbc.Col(children=[dbc.NavItem(dbc.NavLink("Tickets", id='modal_comprar', href="#", className="text-platzi"))])],
+                        #             className="g-0 ms-auto flex-nowrap mt-3 mt-md-0", align="center"),
+
                         dbc.NavItem(dbc.NavLink(html.A("Conferencia", href="#main",
                                         className='text-light font-weight-bold'))),
 
@@ -56,8 +59,8 @@ app.layout = dbc.Container([
                         dbc.NavItem(dbc.NavLink(html.A("Conviertete en orador", href="#conviertete-en-orador",
                                         className='text-light font-weight-bold'))),
 
-                        dbc.Row([dbc.Col(children=[dbc.NavItem(dbc.NavLink("Tickets", id='modal_comprar', href="#", className="text-platzi"))])],
-                                    className="g-0 ms-auto flex-nowrap mt-3 mt-md-0", align="center"),
+                        dbc.NavItem(dbc.NavLink(html.A("Tickets", id='modal_comprar', href="#",
+                                        className='text-platzi font-weight-bold'))),
 
                     ], id="navbar-collapse", is_open=False, navbar=True,
                     ),
