@@ -2,6 +2,10 @@
     width: 80px
 }
 
+.home{
+    padding: 0px 0px 0px 0px;
+}
+
 .navbar {
     flex-grow: 0;
 }
@@ -16,6 +20,10 @@
 
 .text-platzi {
     color: #97c93e
+}
+
+.main{
+    padding: 0px 0px 0px 0px;
 }
 
 #main .carousel-inner img{
