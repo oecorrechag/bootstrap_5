@@ -88,7 +88,6 @@ app.layout = dbc.Container([
                             blanditiis soluta necessitatibus consectetur sit laudantium ipsum iste explicabo \
                             architecto velit vel aperiam nesciunt ut asperiores commodi dignissimos delectus \
                             mollitia adipisci est reprehenderit a, autem placeat qui. Fugit?"),
-                    # dbc.Button("Quiero ser orador", outline=True, color="dark", className="me-1"),
                     modals,
 
                     ],width={"size": 6, "offset": 6}),
