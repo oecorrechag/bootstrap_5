@@ -22,9 +22,8 @@
     color: #97c93e
 }
 
-.main{
+#main{
     padding: 0px 0px 0px 0px;
-    border: 0px 0px 0px 0px;
 }
 
 
@@ -82,6 +81,24 @@
     max-width: 100%;
     padding: 10px;
 }
+
+
+
+#place-time2 {
+    background-color: #343a40;
+    color: white;
+}
+
+#place-time2 img {
+    max-width: 100%;
+    padding: 10px;
+}
+
+
+
+
+
+
 
 
 #footer{

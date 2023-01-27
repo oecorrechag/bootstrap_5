@@ -59,66 +59,15 @@ app.layout = dbc.Container([
 
 
     ################################################ Main ################################################
-    
-
-    # html.Div(id='main', children=[
-
-        # html.Div([
-
-            # dbc.Container(className='carousel-inner', children=[
-
-            #     dbc.Carousel(
-            #         items=[
-            #             {"key": "1", "src": "/assets/images/NY.jpg"},
-            #             {"key": "2", "src": "/assets/images/tokio.jpg"},
-            #             {"key": "3", "src": "assets/images/paris.jpg"},
-            #         ],
-            #         controls=False,
-            #         indicators=False,
-            #         interval=2000,
-            #         ride="carousel",      
-            #     ),
 
 
-                # html.Div(className='overlay carousel-caption', children=[
+    html.Br(),html.Br(),html.Br(),
 
-                #     dbc.Container([
-                #         dbc.Row(children=[
-
-                #             dbc.Col([
-
-                #             html.H1("Title", className="sub_title"),
-                #             html.P("Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, illo eos ad \
-                #                     inventore reiciendis alias impedit repellendus dolorum. Itaque cum perspiciatis nihil \
-                #                     magni, voluptatem quibusdam asperiores aperiam animi ipsa iure! Tenetur eligendi \
-                #                     blanditiis soluta necessitatibus consectetur sit laudantium ipsum iste explicabo \
-                #                     architecto velit vel aperiam nesciunt ut asperiores commodi dignissimos delectus \
-                #                     mollitia adipisci est reprehenderit a, autem placeat qui. Fugit?"),
-                #             modals,
-
-                #             ],width={"size": 6, "offset": 6}),
-
-                #         ], className="row text-center"), 
-                #     ]),
-                    
-                # ]),
-
-            # ]),
-
-        # ]),
-
-    # ]),
-
-
-
-# el siguiente es el que mejor funciona
-
-
-    dbc.Container(id='main', className='main', children=[  #fluid=True, 
+    dbc.Container(id='main', className='container-fluid', children=[  
 
         # sin html div
 
-            dbc.Container(className='carousel-inner', fluid=True, children=[
+            dbc.Container(className='carousel-inner', children=[ 
 
                 dbc.Carousel(
                     items=[
@@ -155,7 +104,7 @@ app.layout = dbc.Container([
                     
                 ]),
 
-            ]),
+            ], fluid=True),
 
     ], fluid=True),
 
