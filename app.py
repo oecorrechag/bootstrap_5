@@ -126,7 +126,7 @@ app.layout = dbc.Container([
                                 html.Div(className="badges", children=[
                                     html.Span([
                                         dbc.Badge("JavaScript", color="warning", className="me-1"),
-                                        dbc.Badge("Spark", color="success", className="me-1"),
+                                        dbc.Badge("Blockchain", color="success", className="me-1"),
                                     ]),
                                 ]),
                                 html.H5("Orador 1"),
@@ -147,8 +147,8 @@ app.layout = dbc.Container([
                             dbc.CardBody([
                                 html.Div(className="badges", children=[
                                     html.Span([
-                                        dbc.Badge("JavaScript", color="warning", className="me-1"),
-                                        dbc.Badge("Spark", color="success", className="me-1"),
+                                        dbc.Badge("Video games", color="warning", className="me-1"),
+                                        dbc.Badge("Desarrollo web", color="success", className="me-1"),
                                     ]),
                                 ]),
                                 html.H5("Orador 2"),
@@ -169,8 +169,8 @@ app.layout = dbc.Container([
                             dbc.CardBody([
                                 html.Div(className="badges", children=[
                                     html.Span([
-                                        dbc.Badge("JavaScript", color="warning", className="me-1"),
-                                        dbc.Badge("Spark", color="success", className="me-1"),
+                                        dbc.Badge("DevOps", color="warning", className="me-1"),
+                                        dbc.Badge("Data Science", color="success", className="me-1"),
                                     ]),
                                 ]),
                                 html.H5("Orador 3"),
@@ -191,8 +191,8 @@ app.layout = dbc.Container([
                             dbc.CardBody([
                                 html.Div(className="badges", children=[
                                     html.Span([
-                                        dbc.Badge("JavaScript", color="warning", className="me-1"),
-                                        dbc.Badge("Spark", color="success", className="me-1"),
+                                        dbc.Badge("Marketing Digital", color="warning", className="me-1"),
+                                        dbc.Badge("Startups", color="success", className="me-1"),
                                     ]),
                                 ]),
                                 html.H5("Orador 4"),
@@ -213,8 +213,8 @@ app.layout = dbc.Container([
                             dbc.CardBody([
                                 html.Div(className="badges", children=[
                                     html.Span([
-                                        dbc.Badge("JavaScript", color="warning", className="me-1"),
-                                        dbc.Badge("Spark", color="success", className="me-1"),
+                                        dbc.Badge("Diseño", color="warning", className="me-1"),
+                                        dbc.Badge("Finanzas", color="success", className="me-1"),
                                     ]),
                                 ]),
                                 html.H5("Orador 5"),
@@ -231,12 +231,12 @@ app.layout = dbc.Container([
                 dbc.Col(className="col-12 col-md-6 col-lg-4 mb-4", children=[
 
                     dbc.Card([
-                            dbc.CardImg(src="assets/speakers/snake.jpg", top=True),
+                            dbc.CardImg(src="assets/speakers/paloma.jpg", top=True),
                             dbc.CardBody([
                                 html.Div(className="badges", children=[
                                     html.Span([
-                                        dbc.Badge("JavaScript", color="warning", className="me-1"),
-                                        dbc.Badge("Spark", color="success", className="me-1"),
+                                        dbc.Badge("Inteligencia Artiicial", color="warning", className="me-1"),
+                                        dbc.Badge("DOE", color="success", className="me-1"),
                                     ]),
                                 ]),
                                 html.H5("Orador 6"),
