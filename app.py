@@ -61,9 +61,6 @@ app.layout = dbc.Container([
 
     ################################################ Main ################################################
 
-
-    # html.Br(),html.Br(),html.Br(),
-
     dbc.Container(id='main', className='container-fluid', children=[  
 
         dbc.Container(className='carousel-inner px-0', children=[ 
@@ -106,8 +103,6 @@ app.layout = dbc.Container([
         ], fluid=True),
 
     ], fluid=True),
-
-
 
     ############################################## Speakers ##############################################
 
@@ -259,7 +254,6 @@ app.layout = dbc.Container([
         ])
     ]),
 
-
     ########################################### place and date ###########################################
 
     html.Div(id='place-time', children=[
@@ -282,8 +276,6 @@ app.layout = dbc.Container([
             ]),
         ], fluid=True) 
     ]),
-
-
 
     ############################################ be a speaker ############################################
 
@@ -359,16 +351,6 @@ app.layout = dbc.Container([
         ]),
     ]),
 
-
-
-
-
-
-
-
-
-
-
     ############################################### footer ###############################################
         
     dbc.Container([
@@ -387,15 +369,11 @@ app.layout = dbc.Container([
         
     ], fluid=True, id="footer", className="pb-4 pt-4"),
 
-
-
 ], fluid=True, class_name='home') 
 
 
 ################################################################################
 
-
-##### callback para la haburguesa
 # add callback for toggling the collapse on small screens
 @app.callback(
      Output("navbar-collapse", "is_open"),
@@ -409,24 +387,5 @@ def toggle_navbar_collapse(n, is_open):
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 if __name__ == '__main__':
     app.run_server(debug=True)
-
-
-
-###### NOTAS
-
-# pt: padding top
-# pb: padding botton
