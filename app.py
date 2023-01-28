@@ -6,6 +6,7 @@ from components.callbacks import modals
 app = Dash(__name__, title = 'PlatziConf Hawaii',
     external_stylesheets=[dbc.themes.BOOTSTRAP]
 )
+server = app.server
 
 LOGO = "assets\images\platzi-logo.png"
 
