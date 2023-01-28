@@ -231,7 +231,7 @@ app.layout = dbc.Container([
                 dbc.Col(className="col-12 col-md-6 col-lg-4 mb-4", children=[
 
                     dbc.Card([
-                            dbc.CardImg(src="assets/speakers/paloma.jpg", top=True),
+                            dbc.CardImg(src="assets/speakers/snake.jpg", top=True),
                             dbc.CardBody([
                                 html.Div(className="badges", children=[
                                     html.Span([
