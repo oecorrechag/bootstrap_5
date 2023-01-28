@@ -62,7 +62,7 @@ app.layout = dbc.Container([
     ################################################ Main ################################################
 
 
-    html.Br(),html.Br(),html.Br(),
+    # html.Br(),html.Br(),html.Br(),
 
     dbc.Container(id='main', className='container-fluid', children=[  
 
