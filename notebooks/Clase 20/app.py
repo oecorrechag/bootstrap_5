@@ -6,6 +6,7 @@ from components.callbacks import modals
 app = Dash(__name__, title = 'PlatziConf Hawaii',
     external_stylesheets=[dbc.themes.BOOTSTRAP]
 )
+server = app.server
 
 LOGO = "assets\images\platzi-logo.png"
 
@@ -60,9 +61,6 @@ app.layout = dbc.Container([
 
     ################################################ Main ################################################
 
-
-    html.Br(),html.Br(),html.Br(),
-
     dbc.Container(id='main', className='container-fluid', children=[  
 
         dbc.Container(className='carousel-inner px-0', children=[ 
@@ -106,8 +104,6 @@ app.layout = dbc.Container([
 
     ], fluid=True),
 
-
-
     ############################################## Speakers ##############################################
 
     html.Div(id='speakers', className="mt-4", children=[
@@ -130,7 +126,7 @@ app.layout = dbc.Container([
                                 html.Div(className="badges", children=[
                                     html.Span([
                                         dbc.Badge("JavaScript", color="warning", className="me-1"),
-                                        dbc.Badge("Spark", color="success", className="me-1"),
+                                        dbc.Badge("Blockchain", color="success", className="me-1"),
                                     ]),
                                 ]),
                                 html.H5("Orador 1"),
@@ -151,8 +147,8 @@ app.layout = dbc.Container([
                             dbc.CardBody([
                                 html.Div(className="badges", children=[
                                     html.Span([
-                                        dbc.Badge("JavaScript", color="warning", className="me-1"),
-                                        dbc.Badge("Spark", color="success", className="me-1"),
+                                        dbc.Badge("Video games", color="warning", className="me-1"),
+                                        dbc.Badge("Desarrollo web", color="success", className="me-1"),
                                     ]),
                                 ]),
                                 html.H5("Orador 2"),
@@ -173,8 +169,8 @@ app.layout = dbc.Container([
                             dbc.CardBody([
                                 html.Div(className="badges", children=[
                                     html.Span([
-                                        dbc.Badge("JavaScript", color="warning", className="me-1"),
-                                        dbc.Badge("Spark", color="success", className="me-1"),
+                                        dbc.Badge("DevOps", color="warning", className="me-1"),
+                                        dbc.Badge("Data Science", color="success", className="me-1"),
                                     ]),
                                 ]),
                                 html.H5("Orador 3"),
@@ -195,8 +191,8 @@ app.layout = dbc.Container([
                             dbc.CardBody([
                                 html.Div(className="badges", children=[
                                     html.Span([
-                                        dbc.Badge("JavaScript", color="warning", className="me-1"),
-                                        dbc.Badge("Spark", color="success", className="me-1"),
+                                        dbc.Badge("Marketing Digital", color="warning", className="me-1"),
+                                        dbc.Badge("Startups", color="success", className="me-1"),
                                     ]),
                                 ]),
                                 html.H5("Orador 4"),
@@ -217,8 +213,8 @@ app.layout = dbc.Container([
                             dbc.CardBody([
                                 html.Div(className="badges", children=[
                                     html.Span([
-                                        dbc.Badge("JavaScript", color="warning", className="me-1"),
-                                        dbc.Badge("Spark", color="success", className="me-1"),
+                                        dbc.Badge("Diseño", color="warning", className="me-1"),
+                                        dbc.Badge("Finanzas", color="success", className="me-1"),
                                     ]),
                                 ]),
                                 html.H5("Orador 5"),
@@ -239,8 +235,8 @@ app.layout = dbc.Container([
                             dbc.CardBody([
                                 html.Div(className="badges", children=[
                                     html.Span([
-                                        dbc.Badge("JavaScript", color="warning", className="me-1"),
-                                        dbc.Badge("Spark", color="success", className="me-1"),
+                                        dbc.Badge("Inteligencia Artiicial", color="warning", className="me-1"),
+                                        dbc.Badge("DOE", color="success", className="me-1"),
                                     ]),
                                 ]),
                                 html.H5("Orador 6"),
@@ -257,7 +253,6 @@ app.layout = dbc.Container([
             ]),
         ])
     ]),
-
 
     ########################################### place and date ###########################################
 
@@ -281,8 +276,6 @@ app.layout = dbc.Container([
             ]),
         ], fluid=True) 
     ]),
-
-
 
     ############################################ be a speaker ############################################
 
@@ -358,16 +351,6 @@ app.layout = dbc.Container([
         ]),
     ]),
 
-
-
-
-
-
-
-
-
-
-
     ############################################### footer ###############################################
         
     dbc.Container([
@@ -386,15 +369,11 @@ app.layout = dbc.Container([
         
     ], fluid=True, id="footer", className="pb-4 pt-4"),
 
-
-
 ], fluid=True, class_name='home') 
 
 
 ################################################################################
 
-
-##### callback para la haburguesa
 # add callback for toggling the collapse on small screens
 @app.callback(
      Output("navbar-collapse", "is_open"),
@@ -408,24 +387,5 @@ def toggle_navbar_collapse(n, is_open):
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 if __name__ == '__main__':
     app.run_server(debug=True)
-
-
-
-###### NOTAS
-
-# pt: padding top
-# pb: padding botton
