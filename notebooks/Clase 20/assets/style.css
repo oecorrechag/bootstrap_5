@@ -6,6 +6,7 @@
     padding: 0px 0px 0px 0px;
 }
 
+
 .navbar {
     flex-grow: 0;
 }
@@ -77,10 +78,17 @@
 }
 
 
+#speakers {
+    padding: 70px 0px 30px 0px;
+}
+
+
 #place-time {
+    padding: 70px 0px 30px 0px;
     background-color: #343a40;
     color: white;
 }
+
 
 #place-time img {
     max-width: 100%;

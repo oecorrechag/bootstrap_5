@@ -110,10 +110,10 @@ app.layout = dbc.Container([
 
     ############################################## Speakers ##############################################
 
-    html.Div(id='speakers', className="mt-4 pt-3 pb-3", children=[
+    html.Div(id='speakers', className="mt-4", children=[
         dbc.Container([
 
-            dbc.Row(className="col text-center  pt-3 pb-3", children=[
+            dbc.Row(className="col text-center", children=[
                 dbc.Col([
                     html.Small("Conoce a los"),
                     html.H2("Oradores"),

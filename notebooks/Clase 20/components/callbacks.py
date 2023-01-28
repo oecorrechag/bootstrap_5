@@ -4,7 +4,7 @@ import dash_bootstrap_components as dbc
 
 modals = html.Div(
     [
-        dbc.Button("Quiero ser orador", outline=True, color="dark", className="me-1"),
+        html.A(dbc.Button("Quiero ser orador", outline=True, color="dark", className="me-1"), href="#conviertete-en-orador", className='text-light font-weight-bold'),
         dbc.Button("Comprar tickets", id='modalCompra', className="btn-platzi"), 
         dbc.Modal(
             [
