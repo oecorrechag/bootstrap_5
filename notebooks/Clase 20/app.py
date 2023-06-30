@@ -248,8 +248,6 @@ app.layout = dbc.Container([
                         ],
                     )
                 ]),
-
-
             ]),
         ])
     ]),
