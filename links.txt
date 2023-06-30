@@ -4,3 +4,10 @@ links para ver ideas:
 https://bootstrapmade.com
 https://themes.getbootstrap.com
 https://mobirise.com/extensions/kit/
+
+
+links:
+
+https://dash-bootstrap-components.opensource.faculty.ai/docs/components/card/
+https://getbootstrap.com/docs/5.3/components/modal/
+https://getbootstrap.com/docs/5.0/components/alerts/
